@@ -1,0 +1,54 @@
+@media screen and (min-width: 1024px) {	
+/* ---------------------- Page animations ------------------------   */		
+		
+.main  .anim {
+transform: translate3d(0px, -200%, 0px);
+-ms-transform: translate3d(0px, -200%, 0px);
+-webkit-transform: translate3d(0px, -200%, 0px);
+-webkit-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+
+.main  .active .anim {
+transform:translate3d(0px, 0%, 0px);
+-ms-transform:translate3d(0px, 0%, 0px);
+-webkit-transform: translate3d(0px, 0%, 0px);
+-webkit-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+
+.main  .anim2 {
+transform:translate3d(0px, -100%, 0px);
+-ms-transform:translate3d(0px, -100%, 0px);
+-webkit-transform: translate3d(0px, -100%, 0px);
+-webkit-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+
+.main  .active .anim2 {
+transform:translate3d(0px, 0%, 0px);
+-ms-transform:translate3d(0px, 0%, 0px);
+-webkit-transform: translate3d(0px, 0%, 0px);
+-webkit-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+
+.main  .anim-none {
+transform:translate3d(0px, 0%, 0px);
+-ms-transform:translate3d(0px, 0%, 0px);
+-webkit-transform: translate3d(0px, 0%, 0px);
+-webkit-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+
+.main  .active .anim-none {
+transform:translate3d(0px, 0%, 0px);
+-ms-transform:translate3d(0px, 0%, 0px);
+-webkit-transform: translate3d(0px, 0%, 0px);
+-webkit-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+	
+
+}
+	

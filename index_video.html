@@ -38,16 +38,19 @@
 	  
  	<!-- BEGIN PAGE 1 -->
 	
-      <section class="page1 no_video">
+      <section class="page1 page_1 video">
 
-        <div class="page_container page_1 anim">
+        <div class="page_container anim">
 		
 		<div class="col-md-6 vcenter">         
 		
         <h2>TIME REMAINING TO LUNCH</h2>
+					<a id="P2" class="player" data-property="{videoURL:'3lhH2Tk3oiQ',containment:'body',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}">My video</a> 
+			<a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'https://www.youtube.com/watch?v=3lhH2Tk3oiQ',containment:'body',autoPlay:true, mute:true, startAt:40, stopAt:22, opacity:1}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="Lexus IS">youtube</a>	
 		
 		<div id="defaultCountdown"></div>
 		<p style="">We are pleased to announce the release of our new website. It will be designed with a fresh new look and user-friendly navigation, updated with our latest articles.</p>
+
 		
 		
 		</div>
@@ -119,8 +122,7 @@
 
     </div>
    
-  </div>
-
+  </div> 
   
   
   
@@ -133,10 +135,9 @@
 			responsiveFallback: 1024
 		  });
 		});
-		
-	  	
+
+	
 		$(function () {
-		
 			$('#defaultCountdown').countdown({until: new Date(2015, 08-1, 4)});
 		});
 		
@@ -149,9 +150,19 @@
 			div.style.display = '';
 		 };
 		 
-	</script>
-	
-  
+
+		jQuery(function(){
+		 "use strict";
+            if (self.location.href == top.location.href){
+                var logo=$("<a href='' style='position:absolute;top:0;z-index:1000'></a>");
+                $("#wrapper").prepend(logo);
+                $("#logo").fadeIn();
+            }
+
+            jQuery(".player").mb_YTPlayer();
+		});
+
+	</script> 
 
   
   	<script type="text/javascript" src="js/scroll.js"></script>
@@ -159,7 +170,7 @@
 	<script src="js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
   	<script type="text/javascript" src="js/video_header.js"></script>
-  
+
   
 </body>
 
