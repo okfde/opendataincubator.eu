@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Avensis Creative HTML5 & CSS3 TEMPLATE</title>
+	
+	<meta name="author" content="B.Petkov">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+	<link href='css/jquery.countdown.css' rel='stylesheet' type='text/css'>	
+	<link href='css/scroll.css' rel='stylesheet' type='text/css'>
+	<link href='css/common.css' rel='stylesheet' type='text/css'>
+	<link href='css/main.css' rel='stylesheet' type='text/css'>
+	<link href='css/anim.css' rel='stylesheet' type='text/css'>
+	<link href="css/video_header.css" media="all" rel="stylesheet" type="text/css">
+	
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	
+
+
+
+	
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+  
+    <!-- BEGIN PAGE HOLDER -->
+  
+  <div class="main">
+	  	  
+	  
+ 	<!-- BEGIN PAGE 1 -->
+	
+      <section class="page1 page_1 video">
+
+        <div class="page_container anim">
+		
+		<div class="col-md-6 vcenter">         
+		
+        <h2>TIME REMAINING TO LUNCH</h2>
+					<a id="P2" class="player" data-property="{videoURL:'3lhH2Tk3oiQ',containment:'body',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}">My video</a> 
+			<a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'https://www.youtube.com/watch?v=3lhH2Tk3oiQ',containment:'body',autoPlay:true, mute:true, startAt:40, stopAt:22, opacity:1}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="Lexus IS">youtube</a>	
+		
+		<div id="defaultCountdown"></div>
+		<p style="">We are pleased to announce the release of our new website. It will be designed with a fresh new look and user-friendly navigation, updated with our latest articles.</p>
+
+		
+		
+		</div>
+
+
+  	    </div>
+      </section>
+  
+	 	<!-- BEGIN PAGE 2 -->   
+	  
+	   <section class="page2">
+
+	   <div class="page_container anim2">
+
+		<div class="col-md-6 vcenter">         
+		
+        <h2>Some about the project:</h2>
+		
+		<p>Nam commodo, lectus a consectetur hendrerit, justo arcu imperdiet elit, id tincidunt nisl sapien eu eros. Duis suscipit sapien ac massa elementum, ac vehicula enim pretium. Nunc nec erat nibh. Donec rutrum iaculis massa et dapibus. Donec cursus, justo quis aliquet pharetra, lorem enim rhoncus magna, ac porta arcu dolor sed nulla.</p>
+		<iframe name="hiddenFrame" class="hide"></iframe>
+			<div id="subscribe-form" class="form">
+				<form id="subscribe" onsubmit="showHide();"  data-success-response="success" action="mailListHandler.php" method="post" name="subscribe" target="hiddenFrame">           
+					
+				<input  id="semail" class="text-input" name="email" type="email" placeholder="Your e-mail address" data-msg-required="This field is required." data-msg-email="Please enter a valid email address." required>					
+
+					<button type="submit" value="Submit" name="Submit" class="btn btn-5 btn-5b icon-subscrbe"><span>Subscribe</span></button>
+                                    <input type="hidden" name="subscribe">
+
+                                    <input type="text" name="important-info">					
+				</form>
+			</div>
+
+		<div id="show_message" style="display:none">
+			<p>Thank you for subscribing! </p>
+		</div>		
+			
+			
+			
+			
+		</div>
+
+	  </div>
+	   </section>
+	   
+	   
+
+	 	<!-- BEGIN PAGE 3 -->   
+	  
+	   <section class="page3">
+
+	   <div class="page_container anim2">
+
+		<div class="col-md-6 vcenter">         
+							<h2><i class="fa fa-phone"></i>Phone</h2>
+							<p>Phone: (000) 555 1212<br>Mobile: (000) 555 0100<br>Fax: (000) 555 0101</p>
+							<h2><i class="fa fa-envelope"></i>Email</h2>
+							<p>JohnDoe@example.com<br>RichardRoe@example.com</p>
+							<h2><i class="fa fa-map-marker"></i>Address</h2>
+							<p>123 Some Street, Some City, AA 12345</p>
+		</div>
+
+	  </div>
+	   </section>	   
+	   
+
+  
+	   
+
+
+    </div>
+   
+  </div> 
+  
+  
+  
+  	<script>
+
+	  $(document).ready(function(){
+	  "use strict";
+		  $(".main").onepage_scroll({
+			sectionContainer: "section",
+			responsiveFallback: 1024
+		  });
+		});
+
+	
+		$(function () {
+			$('#defaultCountdown').countdown({until: new Date(2015, 08-1, 4)});
+		});
+		
+	
+		  function showHide() {
+		  "use strict";
+		   var div = document.getElementById("subscribe-form");
+			 div.style.display = 'none';
+			var div = document.getElementById("show_message");
+			div.style.display = '';
+		 };
+		 
+
+		jQuery(function(){
+		 "use strict";
+            if (self.location.href == top.location.href){
+                var logo=$("<a href='' style='position:absolute;top:0;z-index:1000'></a>");
+                $("#wrapper").prepend(logo);
+                $("#logo").fadeIn();
+            }
+
+            jQuery(".player").mb_YTPlayer();
+		});
+
+	</script> 
+
+  
+  	<script type="text/javascript" src="js/scroll.js"></script>
+	<script src="js/jquery.plugin.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  	<script type="text/javascript" src="js/video_header.js"></script>
+
+  
+</body>
+
+</html>

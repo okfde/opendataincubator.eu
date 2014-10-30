@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Open Data Incubator for Europe</title>
+	
+	<meta name="author" content="ODINE">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+	<link href='css/jquery.countdown.css' rel='stylesheet' type='text/css'>	
+	<link href='css/scroll.css' rel='stylesheet' type='text/css'>
+	<link href='css/common.css' rel='stylesheet' type='text/css'>
+	<link href='css/main.css' rel='stylesheet' type='text/css'>
+	<link href='css/anim.css' rel='stylesheet' type='text/css'>
+	<link href="css/video_header.css" media="all" rel="stylesheet" type="text/css">
+	
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	
+
+
+
+	
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+  
+    <!-- BEGIN PAGE HOLDER -->
+  
+  <div class="main">
+	  	  
+	  
+ 	<!-- BEGIN PAGE 1 -->
+	
+      <section class="page1 no_video">
+
+        <div class="page_container page_1 anim">
+		
+		<div class="col-md-6 vcenter">         
+		
+        <h2>COMING SOON</h2>
+		
+		<div id="defaultCountdown"></div>
+		<p style="">We are pleased to announce the launch of an Open Data Incubator for Europe. The Incubator stands to support entrepreneurs, startups and small to medium sized enterprises building new products and services based on open data to create economic and social value in Europe.</p>
+		
+		
+		</div>
+
+
+  	    </div>
+      </section>
+  
+	 	<!-- BEGIN PAGE 2 -->   
+	  
+	   <section class="page2">
+
+	   <div class="page_container anim2">
+
+		<div class="col-md-6 vcenter">         
+		
+        <h2>STAY IN TOUCH</h2>
+		
+		<p>If you are an early start-up around open data, have an idea to set one up, or are a small business that wants to explore an open data opportunity, please leave your email here and we will keep you informed about the first European incubator for Open Data businesses.</p>
+		<iframe name="hiddenFrame" class="hide"></iframe>
+			<div id="subscribe-form" class="form">
+				<form id="subscribe" onsubmit="showHide();"  data-success-response="success" action="mailListHandler.php" method="post" name="subscribe" target="hiddenFrame">           
+					
+				<input  id="semail" class="text-input" name="email" type="email" placeholder="Your e-mail address" data-msg-required="This field is required." data-msg-email="Please enter a valid email address." required>					
+
+					<button type="submit" value="Submit" name="Submit" class="btn btn-5 btn-5b icon-subscrbe"><span>Subscribe</span></button>
+                                    <input type="hidden" name="subscribe">
+
+                                    <input type="text" name="important-info">					
+				</form>
+			</div>
+
+		<div id="show_message" style="display:none">
+			<p>Thank you for subscribing! </p>
+		</div>		
+			
+			
+			
+			
+		</div>
+
+	  </div>
+	   </section>
+	   
+	   
+
+	 	<!-- BEGIN PAGE 3 -->   
+	  
+	   <section class="page3">
+
+	   <div class="page_container anim2">
+
+		<div class="col-md-6 vcenter">         
+							<h2><i class="fa fa-twitter"></i>Twitter</h2>
+							<p><img src="data/twitter-32.png"><a href="https://twitter.com/ODincubator" target="_blank">@ODincubator</p>
+							<h2><i class="fa fa-envelope"></i>Email</h2>
+							<p>info@opendataincubator.eu</p>
+							<h2><i class="fa fa-map-marker"></i>Address</h2>
+							<p>University of Southampton, University Road, Southampton SO17 1BJ</p>
+		</div>
+
+	  </div>
+	   </section>	   
+	   
+
+  
+	   
+
+
+    </div>
+   
+  </div>
+
+  
+  
+  
+  	<script>
+
+	  $(document).ready(function(){
+	  "use strict";
+		  $(".main").onepage_scroll({
+			sectionContainer: "section",
+			responsiveFallback: 1024
+		  });
+		});
+		
+	  	
+		$(function () {
+		
+			$('#defaultCountdown').countdown({until: new Date(2015, 02-1, 4)});
+		});
+		
+	
+		  function showHide() {
+		  "use strict";
+		   var div = document.getElementById("subscribe-form");
+			 div.style.display = 'none';
+			var div = document.getElementById("show_message");
+			div.style.display = '';
+		 };
+		 
+	</script>
+	
+  
+
+  
+  	<script type="text/javascript" src="js/scroll.js"></script>
+	<script src="js/jquery.plugin.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  	<script type="text/javascript" src="js/video_header.js"></script>
+  
+  
+</body>
+
+</html>
