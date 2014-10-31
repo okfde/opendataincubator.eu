@@ -44,7 +44,7 @@ li {
    ========================================================================== */
    
 .main {
-  background: url(../img/bg.jpg) center center no-repeat fixed;
+  background: url(../img/bg.svg) center center no-repeat fixed;
   background-size: cover;
   padding: 3em 0 4.5em;
   position: relative;

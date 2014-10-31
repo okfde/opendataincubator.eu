@@ -1,10 +1,10 @@
-var mapLocation = new google.maps.LatLng(37.422179, -122.084090); //change coordinates here
+var mapLocation = new google.maps.LatLng(54.525961, 15.255119); //change coordinates here
 var marker;
 var map;
 
 function initialize() {
     var mapOptions = {
-        zoom: 14, //change zoom here
+        zoom: 4, //change zoom here
         center: mapLocation
     };
     
