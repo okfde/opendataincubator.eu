@@ -1,166 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Open Data Incubator for Europe</title>
-	
-	<meta name="author" content="ODINE">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
-	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
-	
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-
-	<link href='css/jquery.countdown.css' rel='stylesheet' type='text/css'>	
-	<link href='css/scroll.css' rel='stylesheet' type='text/css'>
-	<link href='css/common.css' rel='stylesheet' type='text/css'>
-	<link href='css/main.css' rel='stylesheet' type='text/css'>
-	<link href='css/anim.css' rel='stylesheet' type='text/css'>
-	<link href="css/video_header.css" media="all" rel="stylesheet" type="text/css">
-	
-    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	
-
-
-
-	
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Data Incubator for Europe</title>
+<meta name="description" content="Open Data Incubator for Europe">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <div class="wrapper">
-
-  
-    <!-- BEGIN PAGE HOLDER -->
-  
-  <div class="main">
-	  	  
-	  
- 	<!-- BEGIN PAGE 1 -->
-	
-      <section class="page1 no_video">
-
-        <div class="page_container page_1 anim">
-		
-		<div class="col-md-6 vcenter">         
-		
-        <h2>COMING SOON</h2>
-		
-		<div id="defaultCountdown"></div>
-		<p style="">We are pleased to announce the launch of an Open Data Incubator for Europe. The Incubator stands to support entrepreneurs, startups and small to medium sized enterprises building new products and services based on open data to create economic and social value in Europe.</p>
-		
-		
-		</div>
-
-
-  	    </div>
-      </section>
-  
-	 	<!-- BEGIN PAGE 2 -->   
-	  
-	   <section class="page2">
-
-	   <div class="page_container anim2">
-
-		<div class="col-md-6 vcenter">         
-		
-        <h2>STAY IN TOUCH</h2>
-		
-		<p>If you are an early start-up around open data, have an idea to set one up, or are a small business that wants to explore an open data opportunity, please leave your email here and we will keep you informed about the first European incubator for Open Data businesses.</p>
-		<iframe name="hiddenFrame" class="hide"></iframe>
-			<div id="subscribe-form" class="form">
-				<form id="subscribe" onsubmit="showHide();"  data-success-response="success" action="mailListHandler.php" method="post" name="subscribe" target="hiddenFrame">           
-					
-				<input  id="semail" class="text-input" name="email" type="email" placeholder="Your e-mail address" data-msg-required="This field is required." data-msg-email="Please enter a valid email address." required>					
-
-					<button type="submit" value="Submit" name="Submit" class="btn btn-5 btn-5b icon-subscrbe"><span>Subscribe</span></button>
-                                    <input type="hidden" name="subscribe">
-
-                                    <input type="text" name="important-info">					
-				</form>
-			</div>
-
-		<div id="show_message" style="display:none">
-			<p>Thank you for subscribing! </p>
-		</div>		
-			
-			
-			
-			
-		</div>
-
-	  </div>
-	   </section>
-	   
-	   
-
-	 	<!-- BEGIN PAGE 3 -->   
-	  
-	   <section class="page3">
-
-	   <div class="page_container anim2">
-
-		<div class="col-md-6 vcenter">         
-							<h2><i class="fa fa-twitter"></i>Twitter</h2>
-							<p><img src="data/twitter-32.png"><a href="https://twitter.com/ODincubator" target="_blank">@ODincubator</p>
-							<h2><i class="fa fa-envelope"></i>Email</h2>
-							<p>info@opendataincubator.eu</p>
-							<h2><i class="fa fa-map-marker"></i>Address</h2>
-							<p>University of Southampton, University Road, Southampton SO17 1BJ</p>
-		</div>
-
-	  </div>
-	   </section>	   
-	   
-
-  
-	   
-
-
+<!--main-->
+<section class="main">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6"> 
+        <!--logo-->
+        <div class="logo"><img src="img/logo.png" data-at2x="img/logo@2x.png" alt="logo"></div>
+        <!--logo end--> 
+      </div>
+      <div class="col-md-6 col-sm-6"> 
+        
+        <!--social-->
+        <div class="social text-center">
+          <ul>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <!--social end--> 
+      </div>
     </div>
-   
+    <div class="row">
+      <div class="col-md-12"> 
+        
+        <!--welcome-message-->
+        <header class="welcome-message text-center">
+          <h1><span class="rotate">We Are Launching Soon , Subscribe To Get Notified</span></h1>
+        </header>
+        <!--welcome-message end--> 
+        
+        <!--sub-form-->
+        <div class="sub-form text-center">
+          <div class="row">
+            <div class="col-md-5 center-block col-sm-8 col-xs-11">
+              <form role="form" id="mc-form" action="http://csmthemes.us3.list-manage.com/subscribe/post-json?u=9666c25a337f497687875a388&amp;id=5b881a50fb&amp;c=?">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email" required value="" name="EMAIL">
+                  <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" id="mc-subscribe" value="Subscribe" name="subscribe">Submit<i class="fa fa-paper-plane"></i></button>
+                  </span> </div>
+              </form>
+              <p id="mc-notification"></p>
+            </div>
+          </div>
+        </div>
+        <!--sub-form end--> 
+        
+        <!-- Countdown-->
+        <ul class="countdown text-center">
+          <li> <span class="days">00</span>
+            <p class="days_ref">days</p>
+          </li>
+          <li class="seperator">:</li>
+          <li> <span class="hours">00</span>
+            <p class="hours_ref">hours</p>
+          </li>
+          <li class="seperator">:</li>
+          <li> <span class="minutes">00</span>
+            <p class="minutes_ref">minutes</p>
+          </li>
+          <li class="seperator">:</li>
+          <li> <span class="seconds">00</span>
+            <p class="seconds_ref">seconds</p>
+          </li>
+        </ul>
+        <!-- Countdown end--> 
+        
+      </div>
+    </div>
   </div>
+</section>
+<!--main end--> 
 
-  
-  
-  
-  	<script>
+<!-- Features
 
-	  $(document).ready(function(){
-	  "use strict";
-		  $(".main").onepage_scroll({
-			sectionContainer: "section",
-			responsiveFallback: 1024
-		  });
-		});
-		
-	  	
-		$(function () {
-		
-			$('#defaultCountdown').countdown({until: new Date(2015, 02-1, 4)});
-		});
-		
-	
-		  function showHide() {
-		  "use strict";
-		   var div = document.getElementById("subscribe-form");
-			 div.style.display = 'none';
-			var div = document.getElementById("show_message");
-			div.style.display = '';
-		 };
-		 
-	</script>
-	
-  
+<section class="features section-spacing">
+  <div class="container">
+    <h2 class="text-center">Features</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="wow fadeInUp product-features row">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/icon-1.png" data-at2x="img/icon-1@2x.png" alt="Features"></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 1-->
+            <h4>Lorem Lpsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, beatae, esse, aspernatur, alias odio numquam incidunt perspiciatis aliquid voluptate sapiente.</p>
+            <!--features 1 end--> 
+          </div>
+        </div>
+        <div class="wow fadeInUp product-features row">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/icon-2.png" data-at2x="img/icon-2@2x.png" alt="Features"></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 2-->
+            <h4>Lorem Lpsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, beatae, esse, aspernatur, alias odio numquam incidunt perspiciatis aliquid voluptate sapiente.</p>
+            <!--features 2 end--> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="wow fadeInUp product-features row">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/icon-3.png" data-at2x="img/icon-3@2x.png" alt="Features"></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 3-->
+            <h4>Lorem Lpsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, beatae, esse, aspernatur, alias odio numquam incidunt perspiciatis aliquid voluptate sapiente.</p>
+            <!--features 3 end--> 
+          </div>
+        </div>
+        <div class="wow fadeInUp product-features row">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/icon-4.png" data-at2x="img/icon-4@2x.png" alt="Features"></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 4-->
+            <h4>Lorem Lpsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, beatae, esse, aspernatur, alias odio numquam incidunt perspiciatis aliquid voluptate sapiente.</p>
+            <!--features 4 end--> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  
-  	<script type="text/javascript" src="js/scroll.js"></script>
-	<script src="js/jquery.plugin.js"></script>
-	<script src="js/jquery.countdown.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-  	<script type="text/javascript" src="js/video_header.js"></script>
-  
-  
+<!--Features end  
+
+--> 
+
+<!--Twitter feed-->
+
+<section class="twitter-feed section-spacing text-center">
+  <div class="overlay-t"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 center-block col-sm-11 col-xs-11">
+        <h2>Latest Tweets</h2>
+        <div class="wow fadeInUp twitter-icon"> <i class="fa fa-twitter"></i> </div>
+        <div class="wow fadeInUp tweet"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Twitter feed end--> 
+
+<!--CONTACT-->
+
+<section class="contact section-spacing" id="contact">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-7"> 
+        <!--map-->
+        <div class="wow fadeInUp map">
+          <div id="map-canvas"></div>
+          
+          <!--address-->
+          
+          <ul class="wow fadeInUp address">
+            <li><i class="fa fa-map-marker"></i>Lorem ipsum dolor sit amet.</li>
+            <li><i class="fa fa-phone"></i>604-788-1832</li>
+            <li><i class="fa fa-envelope"></i>info@sitename.com</li>
+          </ul>
+          
+          <!--address end--> 
+          
+        </div>
+        <!--map end--> 
+      </div>
+      <div class="col-md-5"> 
+        
+        <!--contact form-->
+        
+        <div class="contact-form">
+          <form role="form" action="php/contact-me.php" method="post" id="contact-form">
+            <input type="text" class="wow fadeInUp form-control" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" class="wow fadeInUp form-control" name="email" id="email" placeholder="Email Address" required>
+            <textarea class="wow fadeInUp form-control" name="message" id="message" rows="3" placeholder="Enter Your Message" required></textarea>
+            <button type="submit" class="wow fadeInUp btn btn-default submit-btn" id="submit-btn" value="Send">SUBMIT</button>
+          </form>
+          
+          <!--contact form end-->
+          <div class="success-cf">
+            <p>Thank You! Your message has been sent.</p>
+          </div>
+          <div class="error-cf">
+            <p>Something went wrong, try refreshing and submitting the form again.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--CONTACT END--> 
+
+<!--site-footer-->
+<footer class="site-footer section-spacing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="scroll-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+        
+        <!--social-->
+        
+        <ul class="social">
+          <li class="wow fadeInUp"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li class="wow fadeInUp"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li class="wow fadeInUp"><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+        
+        <!--social end--> 
+        
+        <small class="wow fadeInUp">&copy; Copyright. Some Rights Reserved.</small> </div>
+    </div>
+  </div>
+</footer>
+<!--site-footer end--> 
+
+<!--PRELOAD-->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+<!--end PRELOAD--> 
+
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/tweetie.min.js"></script> 
+<script src="js/jquery.downCount.js"></script> 
+<script src="js/jquery.form.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script> 
+<script src="js/jquery.simple-text-rotator.min.js"></script> 
+<script src="js/main.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
+<script src="js/gmap.js"></script>
 </body>
-
 </html>
